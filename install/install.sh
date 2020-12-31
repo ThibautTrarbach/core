@@ -69,7 +69,7 @@ step_2_mainpackage() {
   apt-install curl
   apt-install sudo 
   apt-install cron
-  #apt_install ntp 
+  apt_install ntp 
   apt-get -y install locate tar telnet wget logrotate fail2ban dos2unix ntpdate htop iotop vim iftop smbclient
   apt-get -y install usermod
   apt-get -y install visudo

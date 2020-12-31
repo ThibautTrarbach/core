@@ -20,7 +20,7 @@ apt_install() {
   if [ $? -ne 0 ]; then
     echo "${JAUNE}probleme installation $@ - test DPKG :"
     dpkg --configure -a
-    apt-get -y install "$@"
+    apt-get -y -f install "$@"
     if [ $? -ne 0 ]; then
       echo "${ROUGE}Ne peut installer $@ - Annulation${NORMAL}"
       exit 1
